@@ -1,0 +1,109 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!--Import materialize.css-->
+      <link type="text/css" rel="stylesheet" href="css/materialize.min.css"  media="screen,projection"/>
+
+      <link rel="stylesheet" href="css/style.css">
+
+      <!--Let browser know website is optimized for mobile-->
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <title>OFF-ROAD</title>
+    </head>
+
+    <body id='home' class='scrollspy'>
+
+      <!-- navbar  -->
+        <div class="navbar-fixed">
+          <nav class="black">
+            <div class="container">
+              <div class="nav-wrapper">
+                <a href="#home" class="brand-logo">OFF ROAD</a>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+                <ul class="right hide-on-med-and-down">
+                  <li><a href="loginpage.html">Login</a></li>
+                  <li><a href="registerpagesso.html">Register</a></li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+    <!-- sidenav -->
+    <ul class="sidenav" id="mobile-demo">
+      <li><a href="loginpage.html">Login</a></li>
+      <li><a href="registerpagesso.html">Register</a></li>
+    </ul>
+
+    <!-- slider -->
+    <div class="slider">
+    <ul class="slides">
+      <li>
+        <img src="image/img2.png">
+        <div class="caption left-align">
+          <h3>OFF-ROAD</h3>
+          <h5 class="white-text text-darken-3">To The Infinity and Beyond!!</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <!-- about -->
+
+  <section id="about" class="about scrollspy">
+    <div class="container">
+      <div class="row">
+        <div class='col m6 s12'>
+          <img class='materialbox' width="200" src="image/slider/logo_web.png" class='responsive-img'>
+        </div>
+        <div class='col m6 s12 center'>
+          <h3> Wellcome to OFF-ROAD Guild!!</h3>
+          <h5>"To The Infinity and Beyond"</h5>
+          <p>We are guild that make you feel like you are home. There is no discrimination for any level or ranks in here. So come join us!!</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+      <!-- footer -->
+      <footer class="page-footer black">
+          <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text text-darken-3">OFF ROAD</h5>
+                <p class="white-text text-darken-3">KPBB Street, Karet Tengsin, Jakarta Pusat 10220</p>
+              </div>
+            </div>
+          </div>
+          <div class="footer-copyright">
+            <div class="container">
+            © 2020 Materialize
+            <a class="white-text text-darken-3 right" href="#!">More Links</a>
+            </div>
+          </div>
+        </footer>
+
+      <!--JavaScript at end of body for optimized loading-->
+      <script type="text/javascript" src="js/materialize.min.js"></script>
+      <script>
+        const sideNav = document.querySelectorAll('.sidenav');
+        M.Sidenav.init(sideNav);
+
+        const slider = document.querySelectorAll('.slider')
+        M.Slider.init(slider, {
+          indicators: false, 
+          height : 300, 
+          transition : 300, 
+          interval: 5000
+        }); 
+
+        const scroll = document.querySelectorAll('.scrollspy');
+        M.ScrollSpy.init(scroll ,{
+          scrollOffset: 70
+        });
+
+      </script>
+    </body>
+  </html>
