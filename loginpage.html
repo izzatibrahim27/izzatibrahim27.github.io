@@ -23,6 +23,7 @@
                   <li><a href="index.html">Home</a></li>
                   <li><a href="loginpage.html">Login</a></li>
                   <li><a href="registerpagesso.html">Register</a></li>
+                  <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Info!</a></li>
                 </ul>
               </div>
             </div>
@@ -34,7 +35,17 @@
       <li><a href="index.html">Home</a></li>
       <li><a href="loginpage.html">Login</a></li>
       <li><a href="registerpagesso.html">Register</a></li>
+      <li><a class='dropdown-trigger' href='#' data-target='dropdown1'>Info!</a></li>
     </ul>
+
+    <!-- Dropdown Structure -->
+  <ul id='dropdown1' class='dropdown-content'>
+    <li><a href="new_pages1.html">Profile</a></li>
+    <li class="divider" tabindex="-1"></li>
+    <li><a href="new_pages2.html">How to Join</a></li>
+    <li class="divider" tabindex="-1"></li>
+    <li><a href='new_pages3.html'>Job Criteria</a></li>
+  </ul>
 
         <!-- slider -->
       <div class="slider">
@@ -109,6 +120,9 @@
           transition : 300, 
           interval: 5000
         });
+
+        const dropdown = document.querySelectorAll('.dropdown-trigger'); 
+        M.Dropdown.init(dropdown);
 
       </script>
     </body>
